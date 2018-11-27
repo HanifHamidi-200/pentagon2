@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\db1\db1\bin\Debug\db1.exe.config
+C:\Users\hanif\source\repos\db1\db1\bin\Debug\db1.exe
+C:\Users\hanif\source\repos\db1\db1\bin\Debug\db1.pdb
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.Form1.resources
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.Properties.Resources.resources
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.exe
+C:\Users\hanif\source\repos\db1\db1\obj\Debug\db1.pdb

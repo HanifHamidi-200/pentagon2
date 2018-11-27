@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\bin\Debug\PYRAM2.exe.config
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\bin\Debug\PYRAM2.exe
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\bin\Debug\PYRAM2.pdb
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.Form1.resources
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.Properties.Resources.resources
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.exe
+C:\Users\hanif\source\repos\PYRAM2\PYRAM2\obj\Debug\PYRAM2.pdb

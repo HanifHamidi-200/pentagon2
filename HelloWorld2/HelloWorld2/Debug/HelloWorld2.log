@@ -1,0 +1,5 @@
+﻿  Hello.cpp
+c:\users\hanif\source\repos\helloworld2\helloworld2\hello.cpp(133): error C2360: initialization of 'greeting1' is skipped by 'case' label
+  c:\users\hanif\source\repos\helloworld2\helloworld2\hello.cpp(125): note: see declaration of 'greeting1'
+c:\users\hanif\source\repos\helloworld2\helloworld2\hello.cpp(136): error C2361: initialization of 'greeting1' is skipped by 'default' label
+  c:\users\hanif\source\repos\helloworld2\helloworld2\hello.cpp(125): note: see declaration of 'greeting1'

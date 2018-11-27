@@ -1,0 +1,13 @@
+C:\Users\hanif\source\repos\SERPO\SERPO\bin\Debug\SERPO.exe.config
+C:\Users\hanif\source\repos\SERPO\SERPO\bin\Debug\SERPO.exe
+C:\Users\hanif\source\repos\SERPO\SERPO\bin\Debug\SERPO.pdb
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.Form1.resources
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.fSub1.resources
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.fSub2.resources
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.fSub7.resources
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.Properties.Resources.resources
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.exe
+C:\Users\hanif\source\repos\SERPO\SERPO\obj\Debug\SERPO.pdb

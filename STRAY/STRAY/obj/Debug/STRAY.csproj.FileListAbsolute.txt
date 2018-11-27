@@ -1,0 +1,13 @@
+C:\Users\hanif\source\repos\STRAY\STRAY\bin\Debug\STRAY.exe.config
+C:\Users\hanif\source\repos\STRAY\STRAY\bin\Debug\STRAY.exe
+C:\Users\hanif\source\repos\STRAY\STRAY\bin\Debug\STRAY.pdb
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.Form1.resources
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.fSub1.resources
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.fSub2.resources
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.fSub3.resources
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.Properties.Resources.resources
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.exe
+C:\Users\hanif\source\repos\STRAY\STRAY\obj\Debug\STRAY.pdb

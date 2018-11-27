@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\RYDX\RYDX\bin\Debug\RYDX.exe.config
+C:\Users\hanif\source\repos\RYDX\RYDX\bin\Debug\RYDX.exe
+C:\Users\hanif\source\repos\RYDX\RYDX\bin\Debug\RYDX.pdb
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.Form1.resources
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.Properties.Resources.resources
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.exe
+C:\Users\hanif\source\repos\RYDX\RYDX\obj\Debug\RYDX.pdb

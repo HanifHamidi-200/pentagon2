@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\JBYTE\JBYTE\bin\Debug\JBYTE.exe.config
+C:\Users\hanif\source\repos\JBYTE\JBYTE\bin\Debug\JBYTE.exe
+C:\Users\hanif\source\repos\JBYTE\JBYTE\bin\Debug\JBYTE.pdb
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.Form1.resources
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.Properties.Resources.resources
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.exe
+C:\Users\hanif\source\repos\JBYTE\JBYTE\obj\Debug\JBYTE.pdb

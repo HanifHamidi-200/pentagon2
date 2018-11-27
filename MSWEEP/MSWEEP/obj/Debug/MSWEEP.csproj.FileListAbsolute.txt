@@ -1,0 +1,13 @@
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\bin\Debug\MSWEEP.exe.config
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\bin\Debug\MSWEEP.exe
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\bin\Debug\MSWEEP.pdb
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.Form1.resources
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.Properties.Resources.resources
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.exe
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.pdb
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.fSub1.resources
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.fSub2.resources
+C:\Users\hanif\source\repos\MSWEEP\MSWEEP\obj\Debug\MSWEEP.fSub3.resources

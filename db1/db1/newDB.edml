@@ -1,0 +1,286 @@
+﻿<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="EntitiesStoreContainer">
+          <EntitySet Name="Egypts" EntityType="Model.Store.Egypts" store:Type="Tables" Schema="dbo" Table="Egypts" />
+          <EntitySet Name="OilGases" EntityType="Model.Store.OilGases" store:Type="Tables" Schema="dbo" Table="OilGases" />
+          <EntitySet Name="Robotics" EntityType="Model.Store.Robotics" store:Type="Tables" Schema="dbo" Table="Robotics" />
+          <EntitySet Name="Supermarkets" EntityType="Model.Store.Supermarkets" store:Type="Tables" Schema="dbo" Table="Supermarkets" />
+          <EntitySet Name="Programs" EntityType="Model.Store.Programs" store:Type="Tables" Schema="dbo" Table="Programs" />
+        </EntityContainer>
+        <EntityType Name="Egypts">
+          <Key>
+            <PropertyRef Name="nID" />
+          </Key>
+          <Property Name="nID" Type="int" Nullable="false" />
+          <Property Name="sSeen" Type="varchar" MaxLength="8000" />
+          <Property Name="sUnseen" Type="varchar" MaxLength="8000" />
+        </EntityType>
+        <EntityType Name="OilGases">
+          <Key>
+            <PropertyRef Name="nQualificationKey" />
+          </Key>
+          <Property Name="sLocation" Type="varchar" MaxLength="8000" />
+          <Property Name="sShape" Type="varchar" MaxLength="8000" />
+          <Property Name="nSize" Type="int" />
+          <Property Name="nQualificationKey" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Robotics">
+          <Key>
+            <PropertyRef Name="nID" />
+          </Key>
+          <Property Name="nID" Type="int" Nullable="false" />
+          <Property Name="sPlan" Type="varchar" MaxLength="8000" />
+          <Property Name="sControl" Type="varchar" MaxLength="8000" />
+          <Property Name="nVersion" Type="int" />
+        </EntityType>
+        <EntityType Name="Supermarkets">
+          <Key>
+            <PropertyRef Name="nID" />
+          </Key>
+          <Property Name="nID" Type="int" Nullable="false" />
+          <Property Name="nType" Type="int" />
+          <Property Name="nQuantity" Type="int" />
+          <Property Name="nPrice" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="Programs">
+          <Key>
+            <PropertyRef Name="nID" />
+            <PropertyRef Name="nEgyptID" />
+            <PropertyRef Name="nOilGasID" />
+            <PropertyRef Name="nRoboticID" />
+            <PropertyRef Name="nSupermarketID" />
+          </Key>
+          <Property Name="nID" Type="int" Nullable="false" />
+          <Property Name="bFeasible" Type="bit" />
+          <Property Name="bWilldo" Type="bit" />
+          <Property Name="dDate" Type="datetime" />
+          <Property Name="nAmount" Type="int" />
+          <Property Name="nEgyptID" Type="int" Nullable="false" />
+          <Property Name="nOilGasID" Type="int" Nullable="false" />
+          <Property Name="nRoboticID" Type="int" Nullable="false" />
+          <Property Name="nSupermarketID" Type="int" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" d4p1:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" annotation:UseStrongSpatialTypes="false" xmlns:d4p1="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" ed:Guid="f011bea6-4e2f-404a-b97e-7847ecce3b1e">
+          <EntitySet Name="Egypt1s" EntityType="Model.Egypt1" />
+          <EntitySet Name="OilGas1s" EntityType="Model.OilGas1" />
+          <EntitySet Name="Robotic1s" EntityType="Model.Robotic1" />
+          <EntitySet Name="Supermarket1s" EntityType="Model.Supermarket1" />
+          <EntitySet Name="Program1s" EntityType="Model.Program1" />
+          <AssociationSet Name="Egypt1_Program1Set" Association="Model.Egypt1_Program1">
+            <End Role="Egypt1" EntitySet="Egypt1s" />
+            <End Role="Program1s" EntitySet="Program1s" />
+          </AssociationSet>
+          <AssociationSet Name="OilGas1_Program1Set" Association="Model.OilGas1_Program1">
+            <End Role="OilGas1" EntitySet="OilGas1s" />
+            <End Role="Program1s" EntitySet="Program1s" />
+          </AssociationSet>
+          <AssociationSet Name="Robotic1_Program1Set" Association="Model.Robotic1_Program1">
+            <End Role="Robotic1" EntitySet="Robotic1s" />
+            <End Role="Program1s" EntitySet="Program1s" />
+          </AssociationSet>
+          <AssociationSet Name="Supermarket1_Program1Set" Association="Model.Supermarket1_Program1">
+            <End Role="Supermarket1" EntitySet="Supermarket1s" />
+            <End Role="Program1s" EntitySet="Program1s" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Egypt1" ed:Guid="d2b124bb-c9ce-4da7-ba51-c94c5c59c80c">
+          <Key>
+            <PropertyRef Name="NID" />
+          </Key>
+          <Property Name="NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="56b3f58f-14b6-4286-a413-87c4050a86f3" />
+          <Property Name="SSeen" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="203ee4fe-17a2-4279-a21b-e054292c7328" />
+          <Property Name="SUnseen" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="1155906a-9357-4e09-9bde-4649b077e093" />
+          <NavigationProperty Name="Program1s" Relationship="Model.Egypt1_Program1" FromRole="Egypt1" ToRole="Program1s" ed:Guid="e2f8de1a-a673-482b-917a-aed86bd8feb2" />
+        </EntityType>
+        <EntityType Name="OilGas1" ed:Guid="267f9dbc-78f0-4158-95a4-79e88c305e5b">
+          <Key>
+            <PropertyRef Name="NQualificationKey" />
+          </Key>
+          <Property Name="SLocation" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="0ffc1005-015a-4411-80fa-0fd963e1d2b9" />
+          <Property Name="SShape" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="05289969-d77d-4c12-a56e-d1c095ba160d" />
+          <Property Name="NSize" Type="Int32" ed:ValidateRequired="false" ed:Guid="513d58e9-67a2-48b0-a7a6-586a0f7db2e4" />
+          <Property Name="NQualificationKey" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="8f6c2dee-6021-4f57-8746-0b17348ba18b" />
+          <NavigationProperty Name="Program1s" Relationship="Model.OilGas1_Program1" FromRole="OilGas1" ToRole="Program1s" ed:Guid="537c360d-29cb-4d03-9aef-5eeab5fa8e2b" />
+        </EntityType>
+        <EntityType Name="Robotic1" ed:Guid="0befc543-c66c-4419-b99b-8d4b2f024181">
+          <Key>
+            <PropertyRef Name="NID" />
+          </Key>
+          <Property Name="NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="8ab937af-b806-44c8-be4a-a2653bc79ba1" />
+          <Property Name="SPlan" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="1754c40c-96a9-49ea-b34e-5de8c9a50a29" />
+          <Property Name="SControl" Type="String" MaxLength="8000" ed:ValidateMaxLength="8000" ed:ValidateRequired="false" ed:Guid="8b6650ce-3e09-49e2-8185-e11827405637" />
+          <Property Name="NVersion" Type="Int32" ed:ValidateRequired="false" ed:Guid="60c3ac64-59e0-442c-93f9-c4aa2beb7269" />
+          <NavigationProperty Name="Program1s" Relationship="Model.Robotic1_Program1" FromRole="Robotic1" ToRole="Program1s" ed:Guid="20db7cb8-5c73-417d-8a15-47a1addaf369" />
+        </EntityType>
+        <EntityType Name="Supermarket1" ed:Guid="e4213e55-89f4-43cc-b056-f1c93aee3c73">
+          <Key>
+            <PropertyRef Name="NID" />
+          </Key>
+          <Property Name="NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="4094129f-4179-4e3d-aef2-fe6b7cf2a04b" />
+          <Property Name="NType" Type="Int32" ed:ValidateRequired="false" ed:Guid="11d5375a-ce04-475e-8c2f-7ea2d6fe9708" />
+          <Property Name="NQuantity" Type="Int32" ed:ValidateRequired="false" ed:Guid="9726bdac-3568-4d6c-8b50-adef442e90b4" />
+          <Property Name="NPrice" Type="Decimal" Precision="18" Scale="0" ed:ValidateRequired="false" ed:Guid="2987b3b9-869e-4a12-8f3a-16692493749a" />
+          <NavigationProperty Name="Program1s" Relationship="Model.Supermarket1_Program1" FromRole="Supermarket1" ToRole="Program1s" ed:Guid="fb43bf0b-d6c0-4a3f-8e30-339fbfec8d02" />
+        </EntityType>
+        <EntityType Name="Program1" ed:Guid="85e2e501-e625-446d-bbff-3eb02a838b45">
+          <Key>
+            <PropertyRef Name="NID" />
+            <PropertyRef Name="Egypt1NID" />
+            <PropertyRef Name="NQualificationKey" />
+            <PropertyRef Name="Robotic1NID" />
+            <PropertyRef Name="Supermarket1NID" />
+          </Key>
+          <Property Name="NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="6bb737ad-7379-4890-a5a0-fca9b04d80ac" />
+          <Property Name="BFeasible" Type="Boolean" ed:ValidateRequired="false" ed:Guid="5fd7d458-e10c-4505-861e-8c297156e511" />
+          <Property Name="BWilldo" Type="Boolean" ed:ValidateRequired="false" ed:Guid="f5beacb0-af8c-4c3a-adc1-e306f02020c7" />
+          <Property Name="DDate" Type="DateTime" ed:ValidateRequired="false" ed:Guid="53c60790-cd0a-4379-977f-fa846c6b26bc" />
+          <Property Name="NAmount" Type="Int32" ed:ValidateRequired="false" ed:Guid="d1609c4b-3cb5-465b-a945-a00717cf2c47" />
+          <Property Name="Egypt1NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="795ed5e7-b5e2-48a6-86c1-e01d318229df" />
+          <Property Name="NQualificationKey" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="9b73b538-f4dc-4ce5-ab1d-49d665e571a5" />
+          <Property Name="Robotic1NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="21f906bc-c930-4ad4-9929-9d5f54fb4cd1" />
+          <Property Name="Supermarket1NID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="cb4443e5-6740-4786-b897-cf3aebd4c642" />
+          <NavigationProperty Name="Egypt1" Relationship="Model.Egypt1_Program1" FromRole="Program1s" ToRole="Egypt1" ed:Guid="04b11f49-4192-4453-949a-e04fa55b919c" />
+          <NavigationProperty Name="OilGas1" Relationship="Model.OilGas1_Program1" FromRole="Program1s" ToRole="OilGas1" ed:Guid="ef7c1ce0-9739-4c17-8281-fe1045ff2fc7" />
+          <NavigationProperty Name="Robotic1" Relationship="Model.Robotic1_Program1" FromRole="Program1s" ToRole="Robotic1" ed:Guid="cfda57d6-91f7-4b1d-9957-883bd4c632bf" />
+          <NavigationProperty Name="Supermarket1" Relationship="Model.Supermarket1_Program1" FromRole="Program1s" ToRole="Supermarket1" ed:Guid="98b6e962-6ece-44fa-af81-98e060d3ba14" />
+        </EntityType>
+        <Association Name="Egypt1_Program1" ed:Guid="64d16103-eae4-411c-9c73-fd95f60f821d">
+          <End Role="Egypt1" Type="Model.Egypt1" Multiplicity="1" />
+          <End Role="Program1s" Type="Model.Program1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Egypt1">
+              <PropertyRef Name="NID" />
+            </Principal>
+            <Dependent Role="Program1s">
+              <PropertyRef Name="Egypt1NID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OilGas1_Program1" ed:Guid="ff93e653-b905-4170-b6e4-bd5fb62016d6">
+          <End Role="OilGas1" Type="Model.OilGas1" Multiplicity="1" />
+          <End Role="Program1s" Type="Model.Program1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OilGas1">
+              <PropertyRef Name="NQualificationKey" />
+            </Principal>
+            <Dependent Role="Program1s">
+              <PropertyRef Name="NQualificationKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Robotic1_Program1" ed:Guid="925c3dbb-7945-45f7-8014-46856226be20">
+          <End Role="Robotic1" Type="Model.Robotic1" Multiplicity="1" />
+          <End Role="Program1s" Type="Model.Program1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Robotic1">
+              <PropertyRef Name="NID" />
+            </Principal>
+            <Dependent Role="Program1s">
+              <PropertyRef Name="Robotic1NID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Supermarket1_Program1" ed:Guid="8bd21cb2-3ad5-42e4-8ffc-1060e1b9e3c8">
+          <End Role="Supermarket1" Type="Model.Supermarket1" Multiplicity="1" />
+          <End Role="Program1s" Type="Model.Program1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supermarket1">
+              <PropertyRef Name="NID" />
+            </Principal>
+            <Dependent Role="Program1s">
+              <PropertyRef Name="Supermarket1NID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- MSL content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Egypt1s">
+            <EntityTypeMapping TypeName="Model.Egypt1">
+              <MappingFragment StoreEntitySet="Egypts">
+                <ScalarProperty Name="NID" ColumnName="nID" />
+                <ScalarProperty Name="SSeen" ColumnName="sSeen" />
+                <ScalarProperty Name="SUnseen" ColumnName="sUnseen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OilGas1s">
+            <EntityTypeMapping TypeName="Model.OilGas1">
+              <MappingFragment StoreEntitySet="OilGases">
+                <ScalarProperty Name="SLocation" ColumnName="sLocation" />
+                <ScalarProperty Name="SShape" ColumnName="sShape" />
+                <ScalarProperty Name="NSize" ColumnName="nSize" />
+                <ScalarProperty Name="NQualificationKey" ColumnName="nQualificationKey" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Robotic1s">
+            <EntityTypeMapping TypeName="Model.Robotic1">
+              <MappingFragment StoreEntitySet="Robotics">
+                <ScalarProperty Name="NID" ColumnName="nID" />
+                <ScalarProperty Name="SPlan" ColumnName="sPlan" />
+                <ScalarProperty Name="SControl" ColumnName="sControl" />
+                <ScalarProperty Name="NVersion" ColumnName="nVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Supermarket1s">
+            <EntityTypeMapping TypeName="Model.Supermarket1">
+              <MappingFragment StoreEntitySet="Supermarkets">
+                <ScalarProperty Name="NID" ColumnName="nID" />
+                <ScalarProperty Name="NType" ColumnName="nType" />
+                <ScalarProperty Name="NQuantity" ColumnName="nQuantity" />
+                <ScalarProperty Name="NPrice" ColumnName="nPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Program1s">
+            <EntityTypeMapping TypeName="Model.Program1">
+              <MappingFragment StoreEntitySet="Programs">
+                <ScalarProperty Name="NID" ColumnName="nID" />
+                <ScalarProperty Name="BFeasible" ColumnName="bFeasible" />
+                <ScalarProperty Name="BWilldo" ColumnName="bWilldo" />
+                <ScalarProperty Name="DDate" ColumnName="dDate" />
+                <ScalarProperty Name="NAmount" ColumnName="nAmount" />
+                <ScalarProperty Name="Egypt1NID" ColumnName="nEgyptID" />
+                <ScalarProperty Name="NQualificationKey" ColumnName="nOilGasID" />
+                <ScalarProperty Name="Robotic1NID" ColumnName="nRoboticID" />
+                <ScalarProperty Name="Supermarket1NID" ColumnName="nSupermarketID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <edmx:Diagrams>
+      <Diagram Name="Main" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
