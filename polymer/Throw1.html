@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OwnWebsite - Hanif Hamidi</title>
+        <link rel="stylesheet" href="myStyle1.css">
+         <script>
+          function validateForm() {
+                    var x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                }
+           </script>
+             
+    </head>
+    <body>
+        <div class="topnav">
+        <p>Title = OwnWebsite</p>
+        <p>Author = Hanif Hamidi</p>
+        <button type="button"
+        onclick="document.getElementById('p2').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+        <p id="p2">Demo</p>
+             <form name="myForm" action="/action_page.php"
+        onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <button id="btn1" name="subject" type="submit" >Submit</button>
+    </form>
+             <form>
+             <button id="btn1" name="subject" type="button" value="fav_Frank" onclick=click1()>Frank</button>
+             <button id="btn2" name="subject" type="button" value="fav_Alien" onclick=click2()>Alien</button>
+             <button id="btn3" name="subject" type="button" value="fav_Pluto" onclick=click3()>Pluto</button>
+             <button id="btn4" name="subject" type="button" value="fav_Accounts" onclick=click4()>Accounts</button>
+            </form>
+        </div>
+        <div class="content">
+        <h1 id="h1">MAIN</h1>
+        <img src="F ChristianDowngradedValue.png">
+        <img src="F JavaDowngradedValue.png">
+        <img src="F JavaPolymer.png">
+        <img src="F PythonModularApproach.png">
+        <h1 id="h1">Throw1</h1>
+        <h2 id="h2">RMND</h2>
+        <p>CounterForce escapes all drama</p>
+        <h2 id="h2">RYDX</h2>
+        <p>RegulaterLandlord diverts control</p>
+        <h2 id="h2">TABBY6</h2>
+        <p>InterruptSequence foresees the SeedsCollection</p>
+        <h2 id="h2">LAUCH</h2>
+        <p>ShatnerRegime compares CirculatedAffairs</p>
+        <h1 id="h1">Polymer</h1>
+        <h1 id="h1">Database</h1>
+        <h2 id="h2">Languages</h2>
+        </div>
+        <script>
+             function click1(){
+                    document.getElementById("btn1").value = "var_Frank";
+                    var x = document.getElementById("btn1").value;
+                document.getElementById("p2").innerHTML = x;
+                document.getElementById("h1").style.backgroundColor = "green";
+                document.getElementById("h1").style.color = "rgb(206, 34, 34)";
+                document.getElementById("h2").style.backgroundColor = "pink";
+                document.getElementById("h2").style.color = "black";
+     }
+            function click2(){
+                    document.getElementById("btn1").value = "var_Alien";
+                    var x = document.getElementById("btn1").value;
+                document.getElementById("p2").innerHTML = x;
+                document.getElementById("h1").style.backgroundColor = "green";
+                document.getElementById("h1").style.color = "rgb(206, 34, 34)";
+                document.getElementById("h2").style.backgroundColor = "purple";
+                document.getElementById("h2").style.color = "black";
+     }
+            function click3(){
+                    document.getElementById("btn1").value = "var_Pluto";
+                    var x = document.getElementById("btn1").value;
+                document.getElementById("p2").innerHTML = x;
+                document.getElementById("h1").style.backgroundColor = "blue";
+                document.getElementById("h1").style.color = "rgb(206, 34, 34)";
+                document.getElementById("h2").style.backgroundColor = "lightblue";
+                document.getElementById("h2").style.color = "rgb(219, 114, 163)";
+      }
+            function click4(){
+                    document.getElementById("btn1").value = "var_Accounts";
+                    var x = document.getElementById("btn1").value;
+                document.getElementById("p2").innerHTML = x;
+                document.getElementById("h1").style.backgroundColor = "orange";
+                document.getElementById("h1").style.color = "black";
+                document.getElementById("h2").style.backgroundColor = "blue";
+                document.getElementById("h2").style.color = "rgb(219, 114, 163)";
+     }
+             var x = document.getElementById("btn1").value;
+                document.getElementById("p2").innerHTML = x;
+                document.getElementById("p2").style.backgroundColor = "black";
+                document.getElementById("p2").style.color = "yellow";
+          </script>
+        </body>
+</html>
