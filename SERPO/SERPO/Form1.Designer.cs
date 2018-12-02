@@ -32,9 +32,6 @@
             this.btnOpen3 = new System.Windows.Forms.Button();
             this.btnOpen4 = new System.Windows.Forms.Button();
             this.btnOpen5 = new System.Windows.Forms.Button();
-            this.btnOpen6 = new System.Windows.Forms.Button();
-            this.btnOpen7 = new System.Windows.Forms.Button();
-            this.btnOpen8 = new System.Windows.Forms.Button();
             this.btnOpen2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -52,62 +49,35 @@
             // btnOpen3
             // 
             this.btnOpen3.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen3.Location = new System.Drawing.Point(37, 131);
+            this.btnOpen3.Location = new System.Drawing.Point(389, 45);
             this.btnOpen3.Name = "btnOpen3";
             this.btnOpen3.Size = new System.Drawing.Size(259, 37);
             this.btnOpen3.TabIndex = 1;
             this.btnOpen3.Text = "TABLE1";
             this.btnOpen3.UseVisualStyleBackColor = false;
+            this.btnOpen3.Click += new System.EventHandler(this.btnOpen3_Click);
             // 
             // btnOpen4
             // 
             this.btnOpen4.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen4.Location = new System.Drawing.Point(37, 174);
+            this.btnOpen4.Location = new System.Drawing.Point(389, 88);
             this.btnOpen4.Name = "btnOpen4";
             this.btnOpen4.Size = new System.Drawing.Size(259, 37);
             this.btnOpen4.TabIndex = 2;
             this.btnOpen4.Text = "TABLE2";
             this.btnOpen4.UseVisualStyleBackColor = false;
+            this.btnOpen4.Click += new System.EventHandler(this.btnOpen4_Click);
             // 
             // btnOpen5
             // 
             this.btnOpen5.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen5.Location = new System.Drawing.Point(37, 217);
+            this.btnOpen5.Location = new System.Drawing.Point(389, 131);
             this.btnOpen5.Name = "btnOpen5";
             this.btnOpen5.Size = new System.Drawing.Size(259, 37);
-            this.btnOpen5.TabIndex = 3;
-            this.btnOpen5.Text = "TABLE3";
+            this.btnOpen5.TabIndex = 4;
+            this.btnOpen5.Text = "DIAGRAM1";
             this.btnOpen5.UseVisualStyleBackColor = false;
-            // 
-            // btnOpen6
-            // 
-            this.btnOpen6.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen6.Location = new System.Drawing.Point(389, 131);
-            this.btnOpen6.Name = "btnOpen6";
-            this.btnOpen6.Size = new System.Drawing.Size(259, 37);
-            this.btnOpen6.TabIndex = 4;
-            this.btnOpen6.Text = "DIAGRAM1";
-            this.btnOpen6.UseVisualStyleBackColor = false;
-            // 
-            // btnOpen7
-            // 
-            this.btnOpen7.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen7.Location = new System.Drawing.Point(389, 174);
-            this.btnOpen7.Name = "btnOpen7";
-            this.btnOpen7.Size = new System.Drawing.Size(259, 37);
-            this.btnOpen7.TabIndex = 5;
-            this.btnOpen7.Text = "TEXT1";
-            this.btnOpen7.UseVisualStyleBackColor = false;
-            // 
-            // btnOpen8
-            // 
-            this.btnOpen8.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpen8.Location = new System.Drawing.Point(389, 217);
-            this.btnOpen8.Name = "btnOpen8";
-            this.btnOpen8.Size = new System.Drawing.Size(259, 37);
-            this.btnOpen8.TabIndex = 6;
-            this.btnOpen8.Text = "TEXT2";
-            this.btnOpen8.UseVisualStyleBackColor = false;
+            this.btnOpen5.Click += new System.EventHandler(this.btnOpen5_Click);
             // 
             // btnOpen2
             // 
@@ -127,9 +97,6 @@
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(748, 289);
             this.Controls.Add(this.btnOpen2);
-            this.Controls.Add(this.btnOpen8);
-            this.Controls.Add(this.btnOpen7);
-            this.Controls.Add(this.btnOpen6);
             this.Controls.Add(this.btnOpen5);
             this.Controls.Add(this.btnOpen4);
             this.Controls.Add(this.btnOpen3);
@@ -147,9 +114,6 @@
         private System.Windows.Forms.Button btnOpen3;
         private System.Windows.Forms.Button btnOpen4;
         private System.Windows.Forms.Button btnOpen5;
-        private System.Windows.Forms.Button btnOpen6;
-        private System.Windows.Forms.Button btnOpen7;
-        private System.Windows.Forms.Button btnOpen8;
         private System.Windows.Forms.Button btnOpen2;
     }
 }

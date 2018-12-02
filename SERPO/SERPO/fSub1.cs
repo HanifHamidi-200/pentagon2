@@ -20,7 +20,134 @@ namespace SERPO
         private List<int> _plasmarotate = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         private int mnSerpoCol, mnSerpoRow;
         private String msPlasmaOrder;
+        private int mnPercentChance=80;
+        private int nNumber;
+        private int mnWin = 0;
 
+        private void fWin()
+        {
+            timer1.Enabled = false;
+            timer2.Enabled = false;
+            mnWin += 1;
+            MessageBox.Show("You win", "Win" + Convert.ToString(mnWin));
+        }
+
+        private void fDetect()
+        {
+            bool bFound = false;
+            int nSavecol = mnSerpoCol, nSaverow = mnSerpoRow;
+            int nCol=0, nRow=0;
+            int nPos;
+       
+            for (int i = 1; i <= 8; i++)
+            {
+                nCol = nSavecol;
+                nRow = nSaverow;
+                switch (i)
+                {
+                    case 1:
+                        nRow -= 1;
+                        break;
+                    case 2:
+                        nCol += 1;
+                        break;
+                    case 3:
+                        nRow += 1;
+                        break;
+                    case 4:
+                        nCol -= 1;
+                        break;
+                    case 5:
+                        nRow -= 2;
+                        break;
+                    case 6:
+                        nCol += 2;
+                        break;
+                    case 7:
+                        nRow += 2;
+                        break;
+                    default:
+                        nCol -= 2;
+                        break;
+                }
+                if (nCol <= 1)
+                {
+
+                }
+                else
+                {
+                    if (nCol >= 8)
+                    {
+
+                    }
+                    else
+                    {
+                        if (nRow <= 1)
+                        {
+                        }
+                        else
+                        {
+                            if (nRow >= 8)
+                            {
+
+                            }
+                            else
+                            {
+                                nPos = (nCol - 1) * 8 + nRow;
+                                if (fPlasma(nCol, nRow))
+                                {
+                                    bFound = true;
+                                    goto endline;
+
+                                }
+                             }
+                        }
+                    }
+                }
+            }
+        endline:;
+            if (bFound)
+            {
+                fFree(ref nCol, ref nRow);
+                mnSerpoCol = nCol;
+                mnSerpoRow = nRow;
+
+                fUpdateDisplay();
+
+            }
+        }
+
+        private bool fPlasma(int nCol,int nRow)
+        {
+            int nLength = 0;
+            String sTwo = null;
+            int nValue = 0;
+      
+            if (msPlasmaOrder == null)
+            {
+                goto endline;
+            }
+            nLength = msPlasmaOrder.Length / 2;
+            if (nLength == 0)
+            {
+                goto endline;
+            }
+            for (int i = 1; i <= nLength; i++)
+            {
+                sTwo = msPlasmaOrder.Substring(i * 2 - 2, 2);
+                nValue = Convert.ToInt32(sTwo);
+                if (_plasmarow[nValue - 1] == mnSerpoRow)
+                {
+                    if (_plasmacol[nValue - 1] == mnSerpoCol)
+                    {
+                        return true;
+                    }
+                }
+            }
+        endline:;
+
+            return false;
+        }
         private void fAdvance()
         {
             int nLength;
@@ -31,6 +158,10 @@ namespace SERPO
             do
             {
                 nIndex += 1;
+                if (msPlasmaOrder == null)
+                {
+                    goto endline;
+                }
                 nLength = msPlasmaOrder.Length / 2;
                 if (nLength == 0)
                 {
@@ -41,6 +172,16 @@ namespace SERPO
                 switch (_plasmarotate[nValue - 1])
                 {
                     case 1:
+                         if (_plasmarow[nValue - 1] == mnSerpoRow)
+                        {
+                            if (_plasmacol[nValue - 1] == mnSerpoCol)
+                            {
+                                fUpdateDisplay();
+                                fWin();
+                                fReset();
+                                goto endline2;
+                            }
+                        }
                         _plasmarow[nValue - 1] -= 1;
                         if (_plasmarow[nValue - 1] <= 1)
                         {
@@ -54,6 +195,16 @@ namespace SERPO
                         }
                         break;
                     case 2:
+                        if (_plasmarow[nValue - 1] == mnSerpoRow)
+                        {
+                            if (_plasmacol[nValue - 1] == mnSerpoCol)
+                            {
+                                fUpdateDisplay();
+                                fWin();
+                                fReset();
+                                goto endline2;
+                            }
+                        }
                         _plasmacol[nValue - 1] += 1;
                         if (_plasmacol[nValue - 1] >= 8)
                         {
@@ -67,6 +218,16 @@ namespace SERPO
                         }
                         break;
                     case 3:
+                          if (_plasmarow[nValue - 1] == mnSerpoRow)
+                        {
+                            if (_plasmacol[nValue - 1] == mnSerpoCol)
+                            {
+                                fUpdateDisplay();
+                                fWin();
+                                fReset();
+                                goto endline2;
+                            }
+                        }
                         _plasmarow[nValue - 1] += 1;
                         if (_plasmarow[nValue - 1] >= 8)
                         {
@@ -80,6 +241,16 @@ namespace SERPO
                         }
                         break;
                     default:
+                         if (_plasmarow[nValue - 1] == mnSerpoRow)
+                        {
+                            if (_plasmacol[nValue - 1] == mnSerpoCol)
+                            {
+                                fUpdateDisplay();
+                                fWin();
+                                fReset();
+                                goto endline2;
+                            }
+                        }
                         _plasmacol[nValue - 1] -= 1;
                         if (_plasmacol[nValue - 1] <= 1)
                         {
@@ -97,6 +268,7 @@ namespace SERPO
 
         endline:;
             fUpdateDisplay();
+        endline2:;
 
         }
 
@@ -250,6 +422,7 @@ namespace SERPO
             msShuffle3 = null;
             msPlasmaOrder = null;
             timer1.Enabled = false;
+            timer2.Enabled = false;
 
             for (int i = 1; i <= 64; i++)
             {
@@ -295,6 +468,7 @@ namespace SERPO
               
             fUpdateDisplay();
             timer1.Enabled = true;
+            timer2.Enabled = true;
 
         }
         private void fUpdateDisplay()
@@ -865,13 +1039,13 @@ namespace SERPO
         {
             nCol = 1;
 
-            if (nSquare > 6)
+            if (nSquare > 8)
             {
                 do
                 {
-                    nSquare -= 6;
+                    nSquare -= 8;
                     nCol += 1;
-                } while (nSquare > 6);
+                } while (nSquare > 8);
 
             }
             nRow = nSquare;
@@ -1063,7 +1237,7 @@ namespace SERPO
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (msPlasmaOrder != null)
+            if (msPlasmaOrder != "")
             {
                 fAdvance();
             }
@@ -1072,6 +1246,20 @@ namespace SERPO
         private void fSub1_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Enabled = false;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Random rnd1 = new Random();
+
+            nNumber = rnd1.Next(1, 101);
+            if (msPlasmaOrder != null)
+            {
+                if (nNumber <= mnPercentChance)
+                {
+                    fDetect();
+                }
+            }
         }
 
         private void fSub1_Load(object sender, EventArgs e)

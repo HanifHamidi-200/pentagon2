@@ -34,5 +34,26 @@ namespace SERPO
             _dlg.ShowDialog();
 
         }
+
+        private void btnOpen3_Click(object sender, EventArgs e)
+        {
+            fSub3 _dlg = new fSub3();
+            _dlg.ShowDialog();
+
+        }
+
+        private void btnOpen4_Click(object sender, EventArgs e)
+        {
+            fSub4 _dlg = new fSub4();
+            _dlg.ShowDialog();
+
+        }
+
+        private void btnOpen5_Click(object sender, EventArgs e)
+        {
+            fSub5 _dlg = new fSub5();
+            _dlg.ShowDialog();
+
+        }
     }
 }
