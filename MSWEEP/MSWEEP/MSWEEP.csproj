@@ -107,6 +107,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons2\F backgroundtile.png" />
+    <Content Include="icons2\F bug.png" />
+    <Content Include="icons2\F corner_New.png" />
+    <Content Include="icons2\F corner_Old.png" />
+    <Content Include="icons2\F NullGate.png" />
+    <Content Include="icons2\F outlet.png" />
+    <Content Include="icons2\F outlet2.png" />
+    <Content Include="icons2\F straight_New.png" />
+    <Content Include="icons2\F straight_Old.png" />
+    <Content Include="icons2\F T_New.png" />
+    <Content Include="icons2\F T_Old.png" />
     <Content Include="icons3\F arrows.png" />
     <Content Include="icons3\F backgroundtile.png" />
     <Content Include="icons3\F cornerdiamonds.png" />

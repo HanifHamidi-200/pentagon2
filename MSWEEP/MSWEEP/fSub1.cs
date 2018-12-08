@@ -464,13 +464,8 @@ namespace MSWEEP
 
             for (int i = 1; i <= 64; i++)
             {
-                nValue = 1;
-                sTwo = Convert.ToString(nValue);
-                if (sTwo.Length == 1)
-                {
-                    sTwo = "0" + sTwo;
-                    msShuffle2 = msShuffle2 + sTwo;
-                }
+                sTwo = "01";
+                msShuffle2 = msShuffle2 + sTwo;
                 msCovered = msCovered + "2";
             }
 
