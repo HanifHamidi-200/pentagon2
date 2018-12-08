@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fSub2));
             this.btnQNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -95,6 +96,12 @@
             this.pic51 = new System.Windows.Forms.PictureBox();
             this.pic61 = new System.Windows.Forms.PictureBox();
             this.pic71 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.btnNav1 = new System.Windows.Forms.Button();
+            this.btnNav3 = new System.Windows.Forms.Button();
+            this.btnNav4 = new System.Windows.Forms.Button();
+            this.btnNav2 = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic78)).BeginInit();
@@ -165,12 +172,13 @@
             // btnQNext
             // 
             this.btnQNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnQNext.Location = new System.Drawing.Point(667, 23);
+            this.btnQNext.Location = new System.Drawing.Point(616, 23);
             this.btnQNext.Name = "btnQNext";
             this.btnQNext.Size = new System.Drawing.Size(99, 86);
             this.btnQNext.TabIndex = 3;
             this.btnQNext.Text = "&QNext";
             this.btnQNext.UseVisualStyleBackColor = false;
+            this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -902,15 +910,82 @@
             this.pic71.TabIndex = 8;
             this.pic71.TabStop = false;
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 200;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // btnNav1
+            // 
+            this.btnNav1.BackColor = System.Drawing.Color.Lime;
+            this.btnNav1.Location = new System.Drawing.Point(625, 144);
+            this.btnNav1.Name = "btnNav1";
+            this.btnNav1.Size = new System.Drawing.Size(42, 47);
+            this.btnNav1.TabIndex = 4;
+            this.btnNav1.Text = "^";
+            this.btnNav1.UseVisualStyleBackColor = false;
+            this.btnNav1.Click += new System.EventHandler(this.btnNav1_Click);
+            // 
+            // btnNav3
+            // 
+            this.btnNav3.BackColor = System.Drawing.Color.Lime;
+            this.btnNav3.Location = new System.Drawing.Point(625, 246);
+            this.btnNav3.Name = "btnNav3";
+            this.btnNav3.Size = new System.Drawing.Size(42, 47);
+            this.btnNav3.TabIndex = 5;
+            this.btnNav3.Text = "\\/";
+            this.btnNav3.UseVisualStyleBackColor = false;
+            this.btnNav3.Click += new System.EventHandler(this.btnNav3_Click);
+            // 
+            // btnNav4
+            // 
+            this.btnNav4.BackColor = System.Drawing.Color.Lime;
+            this.btnNav4.Location = new System.Drawing.Point(577, 197);
+            this.btnNav4.Name = "btnNav4";
+            this.btnNav4.Size = new System.Drawing.Size(42, 47);
+            this.btnNav4.TabIndex = 6;
+            this.btnNav4.Text = "<-";
+            this.btnNav4.UseVisualStyleBackColor = false;
+            this.btnNav4.Click += new System.EventHandler(this.btnNav4_Click);
+            // 
+            // btnNav2
+            // 
+            this.btnNav2.BackColor = System.Drawing.Color.Lime;
+            this.btnNav2.Location = new System.Drawing.Point(673, 197);
+            this.btnNav2.Name = "btnNav2";
+            this.btnNav2.Size = new System.Drawing.Size(42, 47);
+            this.btnNav2.TabIndex = 7;
+            this.btnNav2.Text = "->";
+            this.btnNav2.UseVisualStyleBackColor = false;
+            this.btnNav2.Click += new System.EventHandler(this.btnNav2_Click);
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.BackColor = System.Drawing.Color.Yellow;
+            this.btnCheck.Location = new System.Drawing.Point(625, 197);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(42, 47);
+            this.btnCheck.TabIndex = 8;
+            this.btnCheck.Text = "C";
+            this.btnCheck.UseVisualStyleBackColor = false;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
             // fSub2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.btnNav2);
+            this.Controls.Add(this.btnNav4);
+            this.Controls.Add(this.btnNav3);
+            this.Controls.Add(this.btnNav1);
             this.Controls.Add(this.btnQNext);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fSub2";
             this.Text = "SNAKE";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fSub2_FormClosing);
+            this.Load += new System.EventHandler(this.fSub2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic78)).EndInit();
@@ -1048,5 +1123,11 @@
         private System.Windows.Forms.PictureBox pic51;
         private System.Windows.Forms.PictureBox pic61;
         private System.Windows.Forms.PictureBox pic71;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button btnNav1;
+        private System.Windows.Forms.Button btnNav3;
+        private System.Windows.Forms.Button btnNav4;
+        private System.Windows.Forms.Button btnNav2;
+        private System.Windows.Forms.Button btnCheck;
     }
 }

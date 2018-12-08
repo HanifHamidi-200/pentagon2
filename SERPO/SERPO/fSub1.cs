@@ -1246,6 +1246,7 @@ namespace SERPO
         private void fSub1_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Enabled = false;
+            timer2.Enabled = false;
         }
 
         private void timer2_Tick(object sender, EventArgs e)

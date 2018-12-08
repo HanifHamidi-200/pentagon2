@@ -125,6 +125,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons2\F back.png" />
+    <Content Include="icons2\F fruit.png" />
+    <Content Include="icons2\F NullGate.png" />
+    <Content Include="icons2\F snakebody.png" />
+    <Content Include="icons2\F snakehead.png" />
     <Content Include="icons\F back.png" />
     <Content Include="icons\F NullGate.png" />
     <Content Include="icons\F plasma.png" />
