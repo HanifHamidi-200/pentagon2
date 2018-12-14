@@ -95,6 +95,9 @@
             this.pic31 = new System.Windows.Forms.PictureBox();
             this.pic21 = new System.Windows.Forms.PictureBox();
             this.pic11 = new System.Windows.Forms.PictureBox();
+            this.btnOutlet = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic78)).BeginInit();
@@ -165,7 +168,7 @@
             // btnQNext
             // 
             this.btnQNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnQNext.Location = new System.Drawing.Point(624, 26);
+            this.btnQNext.Location = new System.Drawing.Point(581, 26);
             this.btnQNext.Name = "btnQNext";
             this.btnQNext.Size = new System.Drawing.Size(97, 88);
             this.btnQNext.TabIndex = 6;
@@ -903,11 +906,47 @@
             this.pic11.TabIndex = 0;
             this.pic11.TabStop = false;
             // 
+            // btnOutlet
+            // 
+            this.btnOutlet.BackColor = System.Drawing.Color.Lime;
+            this.btnOutlet.Location = new System.Drawing.Point(493, 134);
+            this.btnOutlet.Name = "btnOutlet";
+            this.btnOutlet.Size = new System.Drawing.Size(185, 45);
+            this.btnOutlet.TabIndex = 7;
+            this.btnOutlet.Text = "Outlet = OFF";
+            this.btnOutlet.UseVisualStyleBackColor = false;
+            this.btnOutlet.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.Lime;
+            this.btnNext.Location = new System.Drawing.Point(493, 185);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(127, 45);
+            this.btnNext.TabIndex = 8;
+            this.btnNext.Text = "&Next";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Yellow;
+            this.btnCancel.Location = new System.Drawing.Point(626, 185);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(52, 45);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "C";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // fSub2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(695, 450);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnOutlet);
             this.Controls.Add(this.btnQNext);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fSub2";
@@ -1050,5 +1089,8 @@
         private System.Windows.Forms.PictureBox pic31;
         private System.Windows.Forms.PictureBox pic21;
         private System.Windows.Forms.PictureBox pic11;
+        private System.Windows.Forms.Button btnOutlet;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
