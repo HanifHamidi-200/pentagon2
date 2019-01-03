@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\PVROOM\PVROOM\bin\Debug\PVROOM.exe.config
+C:\Users\hanif\source\repos\PVROOM\PVROOM\bin\Debug\PVROOM.exe
+C:\Users\hanif\source\repos\PVROOM\PVROOM\bin\Debug\PVROOM.pdb
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.Form1.resources
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.Properties.Resources.resources
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.exe
+C:\Users\hanif\source\repos\PVROOM\PVROOM\obj\Debug\PVROOM.pdb

@@ -1,0 +1,10 @@
+C:\Users\hanif\source\LibraryADF4\CREVIC\bin\Debug\CREVIC.exe.config
+C:\Users\hanif\source\LibraryADF4\CREVIC\bin\Debug\CREVIC.exe
+C:\Users\hanif\source\LibraryADF4\CREVIC\bin\Debug\CREVIC.pdb
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.csprojAssemblyReference.cache
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.Form1.resources
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.Properties.Resources.resources
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.csproj.GenerateResource.cache
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.exe
+C:\Users\hanif\source\LibraryADF4\CREVIC\obj\Debug\CREVIC.pdb

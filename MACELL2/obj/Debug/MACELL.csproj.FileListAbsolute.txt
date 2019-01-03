@@ -1,0 +1,10 @@
+C:\Users\hanif\source\CantelliPerelli\MACELL\bin\Debug\MACELL.exe.config
+C:\Users\hanif\source\CantelliPerelli\MACELL\bin\Debug\MACELL.exe
+C:\Users\hanif\source\CantelliPerelli\MACELL\bin\Debug\MACELL.pdb
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.csprojAssemblyReference.cache
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.Form1.resources
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.Properties.Resources.resources
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.csproj.GenerateResource.cache
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.exe
+C:\Users\hanif\source\CantelliPerelli\MACELL\obj\Debug\MACELL.pdb

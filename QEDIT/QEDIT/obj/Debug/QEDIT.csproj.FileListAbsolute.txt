@@ -1,0 +1,10 @@
+C:\Users\hanif\source\repos\QEDIT\QEDIT\bin\Debug\QEDIT.exe.config
+C:\Users\hanif\source\repos\QEDIT\QEDIT\bin\Debug\QEDIT.exe
+C:\Users\hanif\source\repos\QEDIT\QEDIT\bin\Debug\QEDIT.pdb
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.Form1.resources
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.Properties.Resources.resources
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.exe
+C:\Users\hanif\source\repos\QEDIT\QEDIT\obj\Debug\QEDIT.pdb
