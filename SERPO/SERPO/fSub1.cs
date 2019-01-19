@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SERPO
-{
+{a
     public partial class fSub1 : Form
     {
         private String msShuffle1;
